@@ -1,0 +1,42 @@
+ Data Collection
+ To train and evaluate the anomaly detection and attack classification systems, multiple
+ well-known network intrusion detection datasets were initially considered:
+ 1. UNSW-NB15–Amodern labeled dataset with realistic network attack scenarios.
+ 2. CICIDS 2017/2018– A dataset containing real-world attack patterns and high quality traffic data
+
+features
+ S.No FeatureName Description
+ 1 srcip SourceIPaddress(string)
+ 2 sport Sourceportnumber(integer)
+ 3 dstip DestinationIPaddress(string)
+ 4 dsport Destinationportnumber(integer)
+ 5 proto Protocol(string)
+ 6 state Stateoftheflow(string)
+ 7 dur Durationoftheflow(float)
+ 8 sbytes Sourcetodestinationbytes(integer)
+ 9 dbytes Destinationtosourcebytes(integer)
+ 10 sttl Sourcetodestinationtimetolive(integer)
+ 11 dttl Destinationtosourcetimetolive(integer)
+ 12 sloss Sourcepacketloss(integer)
+ 13 dloss Destinationpacketloss(integer)
+ 14 service Servicetype(string)
+ 15 sload Sourcebitspersecond(float)
+ 16 dload Destinationbitspersecond(float)
+ 17 spkts Sourcetodestinationpackets(integer)
+ 18 dpkts Destinationtosourcepackets(integer)
+ 19 swin SourceTCPwindowadvertisementvalue(integer)
+ 20 dwin DestinationTCPwindowadvertisementvalue(integer)
+ 21 stcpb SourceTCPsequencenumber(integer)
+ 22 dtcpb DestinationTCPsequencenumber(integer)
+ 23 smeansz Sourcemeanpacketsize(float)
+ 24 dmeansz Destinationmeanpacketsize(float)
+ 25 transdepth HTTPtransactionpipelineddepth(integer)
+ 26 resbdylen Responsebodylength(integer)
+ 27 sjit Sourcejitter(float)
+ 28 djit Destinationjitter(float)
+ 29 swinbps SourceTCPwindowadvertisementbitspersecond(float)
+ 30 dwinbps DestinationTCPwindowadvertisementbitspersecond(float)
+ 31 stcpbbps SourceTCPsequencebitspersecond(float)
+ 32 dtcpbbps DestinationTCPsequencebitspersecond(float)
+ 33 attackcat Attackcategory(string)
+ 34 label Label(0=normal,1=attack)(integer)
