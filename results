@@ -1,0 +1,30 @@
+ ˆ
+ AnomalyDetection(Stage1)–ImplementedusingahybridCNN+LSTM
+ model,whichachievedanaccuracyof 87.11%andaROC-AUCof 0.9771. This
+ modelefficientlyfilterednormaltrafficfrompotentiallymaliciousonesbyleveraging
+ spatialandtemporalpatternsinthedata.
+ Theclassificationperformanceoftheanomalydetectionmodelissummarizedbelow:
+   precision recall f1-score support
+ 0 0.98      0.70    0.82    37000
+ 1 0.80      0.99    0.88    45332
+
+ accuracy       0.86
+
+ AttackCategoryClassification(Stage2)–DesignedusingaCNN-onlyarchi
+tectureformulticlassclassificationofanomalies.Thismodelobtainedanaccuracy
+ of77.04%andaROC-AUCscoreof0.9589, identifyingattacktypessuchasDoS,
+ Probe,R2L,andU2R.
+ Theclassificationperformanceofthemodel issummarizedbelow:
+          precision recall f1-score support
+ Analysis 0.00      0.00    0.00     677
+ Backdoor 0.00      0.00    0.00     583
+ DoS      0.57      0.01    0.03     4089
+ Exploits 0.53      0.95    0.68     11132
+ Fuzzers  0.32      0.51    0.39     6062
+ Generic  1.00      0.96    0.98     18871
+ Normal   0.97      0.78    0.86     37000
+ Recon    0.64      0.76    0.70     3496
+ Shellcode 0.27     0.49    0.35     378
+ Worms    0.00      0.00    0.00     44
+
+accuracy      0.77 
